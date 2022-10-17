@@ -131,3 +131,7 @@ dmypy.json
 *.xml
 .iml
 .idea
+.gitignore
+*.xml
+.iml
+.idea

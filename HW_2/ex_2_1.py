@@ -34,7 +34,7 @@ def write_to_csv():
     processed_data = [main_data[0]]
     for i in range(number_of_lines):
         processed_data.append([row[i] for row in main_data[1:]])
-    with open('info_result.csv', 'w') as f_n:
+    with open('info_result.csv', 'w', encoding='utf-8') as f_n:
         f_n_writer = csv.writer(f_n, quoting=csv.QUOTE_NONNUMERIC)
         for row in processed_data:
             f_n_writer.writerow(row)

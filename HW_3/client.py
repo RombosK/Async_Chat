@@ -49,14 +49,6 @@ def parse_args():
 
 
 def main():
-    # parser = argparse.ArgumentParser(description='ClientAddress')
-    # parser_group = parser.add_argument_group(title=None)
-    # parser_group.add_argument(
-    #     '-a', '--addr', default=DEFAULT_IP_ADDRESS, help='IP address')
-    # parser_group.add_argument('-p', '--port', type=int,
-    #                           default=DEFAULT_PORT, help='Open port')
-    # return parser
-    # namespace = parser.parse_args()
     args = parse_args()
     port = args.port
     server_address = DEFAULT_IP_ADDRESS

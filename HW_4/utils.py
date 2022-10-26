@@ -1,5 +1,4 @@
 import json
-
 from config import MAX_SIZE_MSG, ENCODING
 
 

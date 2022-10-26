@@ -19,7 +19,7 @@ a. клиент отправляет запрос серверу;
 ○ port — tcp-порт на сервере, по умолчанию 7777."""
 
 
-def create_presence(account_name='Guest', status=None):
+def create_presence(account_name='Guest', status='online'):
     out = {
         ACTION: PRESENCE,
         TIME: time.time(),
@@ -39,17 +39,22 @@ def process_ans(message):
     raise ValueError
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description='Client App')
+    parser.add_argument('-a', '--addr', default=DEFAULT_IP_ADDRESS, type=str,
+                        help='enter IP address')
+    parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT,
+                        help='enter port number')
+    return parser.parse_args()
+
+
 def main():
-    parser = argparse.ArgumentParser(description='ClientAddress')
-    parser_group = parser.add_argument_group(title=None)
-    parser_group.add_argument(
-        '-a', '--addr', default=DEFAULT_IP_ADDRESS, help='IP address')
-    parser_group.add_argument('-p', '--port', type=int,
-                              default=DEFAULT_PORT, help='Open port')
-    return parser
-    namespace = parser.parse_args()
+    args = parse_args()
+    port = args.port
+    server_address = DEFAULT_IP_ADDRESS
+
     transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    transport.connect((namespace.addr, namespace.port))
+    transport.connect((server_address, port))
     message_to_server = create_presence()
     send_message(transport, message_to_server)
     try:

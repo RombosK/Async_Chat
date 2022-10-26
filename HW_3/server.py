@@ -28,19 +28,21 @@ def process_client_message(message):
     }
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description='Server App')
+    parser.add_argument('-p', '--port', type=int, default=DEFAULT_PORT,
+                        help='enter port number')
+    parser.add_argument('-a', '--addr', default=DEFAULT_IP_ADDRESS, type=str,
+                        help='enter IP address')
+    return parser.parse_args()
+
+
 def main():
-    parser = argparse.ArgumentParser(description='Server configuration')
-    parser_group = parser.add_argument_group(title='Parameters')
-    parser_group.add_argument(
-        '-a', '--addr', default=DEFAULT_IP_ADDRESS, help='IP address')
-    parser_group.add_argument('-p', '--port', type=int,
-                              default=DEFAULT_PORT, help='Open port')
-    return parser
-    namespace = parser.parse_args()
+    args = parse_args()
+    port = args.port
     transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    transport.bind((namespace.addr, namespace.port))
+    transport.bind(("", port))
     transport.listen(MAX_CONNECTIONS)
-    transport.connect((namespace.addr, namespace.port))
 
     while True:
         client, client_address = transport.accept()
@@ -57,6 +59,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-

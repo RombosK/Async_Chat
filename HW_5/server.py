@@ -4,18 +4,7 @@ import json
 from config import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
     PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, DEFAULT_IP_ADDRESS
 from utils import get_message, send_message
-
-"""Реализовать простое клиент-серверное взаимодействие по протоколу JIM (JSON instant
-messaging):
-b. сервер отвечает соответствующим кодом результата
-Функции сервера:
-● принимает сообщение клиента;
-● формирует ответ клиенту;
-● отправляет ответ клиенту;
-● имеет параметры командной строки:
-○ -p <port> — TCP-порт для работы (по умолчанию использует 7777);
-○ -a <addr> — IP-адрес для прослушивания (по умолчанию слушает все
-доступные адреса)."""
+from log.server_log_config import server_logger
 
 
 def process_client_message(message):
@@ -39,18 +28,30 @@ def parse_args():
 
 def main():
     args = parse_args()
-    port = args.port
+    try:
+        port = args.port
+    except ValueError as e:
+        return server_logger.error(e)
+    try:
+        server_address = DEFAULT_IP_ADDRESS
+    except ValueError as er:
+        return server_logger.error(er)
+
     transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     transport.bind(("", port))
     transport.listen(MAX_CONNECTIONS)
 
     while True:
         client, client_address = transport.accept()
+        server_logger.info(f'Установлено соедение с клиентом {client_address}')
         try:
             message_from_client = get_message(client)
+            server_logger.debug(f'Получено сообщение {message_from_client}')
             print(message_from_client)
             response = process_client_message(message_from_client)
+            server_logger.info(f'Cформирован ответ клиенту {response}')
             send_message(client, response)
+            server_logger.debug(f'Соединение с клиентом {client_address} закрывается.')
             client.close()
         except (ValueError, json.JSONDecodeError):
             print('Принято некорретное сообщение от клиента.')

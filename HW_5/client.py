@@ -5,18 +5,7 @@ import time
 from config import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, STATUS, \
     RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
 from utils import get_message, send_message
-
-"""Реализовать простое клиент-серверное взаимодействие по протоколу JIM (JSON instant
-messaging):
-a. клиент отправляет запрос серверу;
-Функции клиента:
-● сформировать presence-сообщение;
-● отправить сообщение серверу;
-● получить ответ сервера;
-● разобрать сообщение сервера;
-● параметры командной строки скрипта client.py <addr> [<port>]:
-○ addr — ip-адрес сервера;
-○ port — tcp-порт на сервере, по умолчанию 7777."""
+from log.client_log_config import logger
 
 
 def create_presence(account_name='Guest', status='online'):
@@ -28,10 +17,12 @@ def create_presence(account_name='Guest', status='online'):
             STATUS: status
         }
     }
+    logger.debug(f'Сообщение {out} для пользователя {account_name} сформировано')
     return out
 
 
 def process_ans(message):
+    logger.info(f'Разбор сообщения от сервера: {message}')
     if RESPONSE in message:
         if message[RESPONSE] == 200:
             return '200 : OK'
@@ -50,18 +41,29 @@ def parse_args():
 
 def main():
     args = parse_args()
-    port = args.port
-    server_address = DEFAULT_IP_ADDRESS
+    try:
+        port = args.port
+    except ValueError as e:
+        return logger.error(e)
+    try:
+        server_address = DEFAULT_IP_ADDRESS
+    except ValueError as er:
+        return logger.error(er)
 
     transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     transport.connect((server_address, port))
+    logger.info('Соединение с сервером установлено')
     message_to_server = create_presence()
+    logger.info('Запрос отправлен')
     send_message(transport, message_to_server)
     try:
         answer = process_ans(get_message(transport))
+        logger.info('Ответ получен')
+        logger.info(f'Ответ {answer} успешно обработан')
         print(answer)
-    except (ValueError, json.JSONDecodeError):
-        print('Не удалось декодировать сообщение сервера.')
+
+    except ValueError:
+        logger.error('Программный сбой')
 
 
 if __name__ == '__main__':

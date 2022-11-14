@@ -16,6 +16,6 @@ STATUS = 'status'
 PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
-
+OK = 'ok'
 
 

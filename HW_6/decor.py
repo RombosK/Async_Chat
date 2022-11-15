@@ -1,9 +1,6 @@
-import logging
+import inspect
 from functools import wraps
 from HW_6.log.client_log_config import logger
-import log.server_log_config
-import traceback
-import inspect
 
 
 def log(func):

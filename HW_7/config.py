@@ -1,3 +1,4 @@
+
 DEFAULT_IP_ADDRESS = '127.0.0.1'
 
 DEFAULT_PORT = 7777
@@ -12,10 +13,13 @@ TIME = 'time'
 USER = 'user'
 ACCOUNT_NAME = 'account_name'
 STATUS = 'status'
+SENDER = 'sender'
 
 PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
 OK = 'ok'
+MESSAGE = 'message'
+MESSAGE_TEXT = 'message_text'
 
 

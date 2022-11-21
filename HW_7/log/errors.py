@@ -1,9 +1,9 @@
-class UsernameTooLongError(Exception):
-    def __init__(self, username):
-        self.username = username
+class ServerError(Exception):
+    def __init__(self, text):
+        self.text = text
 
     def __str__(self):
-        return 'Username {} should contain less than 26 symbols'.format(self.username)
+        return self.text
 
 
 class ResponseCodeError(Exception):

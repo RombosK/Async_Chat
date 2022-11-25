@@ -1,0 +1,9 @@
+items:
+- computer
+- printer
+- scaner
+items_ptice:
+  computer: 800€-1000€
+  printer: 200€-400€
+  scaner: 180€-300€
+items_quantity: 3

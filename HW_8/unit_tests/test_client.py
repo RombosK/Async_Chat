@@ -3,9 +3,9 @@ import sys
 import unittest
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from HW_4.config import TIME, ACTION, PRESENCE, USER, ACCOUNT_NAME, RESPONSE, STATUS, ERROR, DEFAULT_PORT, \
+from HW_8.config import TIME, ACTION, PRESENCE, USER, ACCOUNT_NAME, RESPONSE, STATUS, ERROR, DEFAULT_PORT, \
     DEFAULT_IP_ADDRESS
-from HW_4.client import create_presence, process_ans, parse_args
+from HW_8.client import create_presence, process_ans, parse_args
 
 
 class TestClient(unittest.TestCase):

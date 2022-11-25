@@ -3,8 +3,8 @@ import sys
 import unittest
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from HW_4.server import process_client_message, parse_args
-from HW_4.config import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
+from HW_8.server import process_client_message, parse_args
+from HW_8.config import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
     PRESENCE, TIME, USER, ERROR
 
 

@@ -4,8 +4,8 @@ import unittest
 import json
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from HW_4.config import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, ENCODING, STATUS
-from HW_4.utils import get_message, send_message
+from HW_8.config import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, ENCODING, STATUS
+from HW_8.utils import get_message, send_message
 
 
 class TestSocket:

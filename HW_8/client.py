@@ -49,7 +49,7 @@ def message_from_server(sock, my_username):
 def create_message(sock, account_name='Guest'):
     to_user = input('Введите username получателя=> ')
     message = input('Введите сообщение для отправки или \'q\' для завершения работы: ')
-    if message == 'Q':
+    if message == 'q':
         sock.close()
         logger.info('Завершение работы по команде пользователя.')
         print('Good bye!')

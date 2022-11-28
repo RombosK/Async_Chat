@@ -20,4 +20,4 @@ while True:
     elif action == 'x':
         while processes:
             process = processes.pop()
-            process.terminate()  # process.kill(}
+            process.kill()

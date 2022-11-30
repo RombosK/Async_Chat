@@ -19,7 +19,7 @@ class Host:
     def __set__(self, instance, value):
         if not isinstance(value, int):
             logger.critical(
-                f'Тип данные не верен {value} введены тип данных {type(value)}')
+                f'Тип данных не верен {value} введенный тип данных {type(value)}')
             exit(1)
         else:
             if value <= 0:

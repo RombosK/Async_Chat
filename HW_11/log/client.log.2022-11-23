@@ -1,0 +1,170 @@
+2022-11-23 19:40:28,478 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: 333 
+2022-11-23 19:40:30,507 CRITICAL client Не удалось подключиться к серверу 127.0.0.1:7777, конечный client отверг запрос на подключение. 
+2022-11-23 19:43:03,672 DEBUG decor Function parse_args was called from main 
+2022-11-23 19:43:03,672 DEBUG decor Function parse_args was called from main 
+2022-11-23 19:43:03,673 DEBUG decor Function parse_args((), {}), return ('127.0.0.1', 7777, 'test2') 
+2022-11-23 19:43:03,673 DEBUG decor Function parse_args((), {}), return ('127.0.0.1', 7777, 'test2') 
+2022-11-23 19:43:03,673 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2 
+2022-11-23 19:43:03,673 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test2 
+2022-11-23 19:43:03,680 DEBUG decor Function parse_args was called from main 
+2022-11-23 19:43:03,680 DEBUG decor Function parse_args was called from main 
+2022-11-23 19:43:03,680 DEBUG decor Function parse_args((), {}), return ('127.0.0.1', 7777, 'test3') 
+2022-11-23 19:43:03,680 DEBUG decor Function parse_args((), {}), return ('127.0.0.1', 7777, 'test3') 
+2022-11-23 19:43:03,680 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test3 
+2022-11-23 19:43:03,680 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test3 
+2022-11-23 19:43:03,680 DEBUG decor Function parse_args was called from main 
+2022-11-23 19:43:03,680 DEBUG decor Function parse_args was called from main 
+2022-11-23 19:43:03,681 DEBUG client Сообщение {'action': 'presence', 'time': 1669221783.6803536, 'user': {'account_name': 'test2', 'status': 'online'}} для пользователя test2 сформировано 
+2022-11-23 19:43:03,681 DEBUG decor Function parse_args((), {}), return ('127.0.0.1', 7777, 'test1') 
+2022-11-23 19:43:03,681 DEBUG client Сообщение {'action': 'presence', 'time': 1669221783.6803536, 'user': {'account_name': 'test2', 'status': 'online'}} для пользователя test2 сформировано 
+2022-11-23 19:43:03,681 DEBUG decor Function parse_args((), {}), return ('127.0.0.1', 7777, 'test1') 
+2022-11-23 19:43:03,681 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1 
+2022-11-23 19:43:03,681 INFO client Запущен клиент с парамертами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: test1 
+2022-11-23 19:43:03,682 DEBUG decor Function create_presence was called from main 
+2022-11-23 19:43:03,682 DEBUG decor Function create_presence was called from main 
+2022-11-23 19:43:03,682 DEBUG decor Function create_presence(('test2',), {}), return {'action': 'presence', 'time': 1669221783.6803536, 'user': {'account_name': 'test2', 'status': 'online'}} 
+2022-11-23 19:43:03,682 DEBUG decor Function create_presence(('test2',), {}), return {'action': 'presence', 'time': 1669221783.6803536, 'user': {'account_name': 'test2', 'status': 'online'}} 
+2022-11-23 19:43:03,684 DEBUG decor Function send_message was called from main 
+2022-11-23 19:43:03,684 DEBUG decor Function send_message was called from main 
+2022-11-23 19:43:03,684 DEBUG decor Function send_message((<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1669221783.6803536, 'user': {'account_name': 'test2', 'status': 'online'}}), {}), return None 
+2022-11-23 19:43:03,684 DEBUG decor Function send_message((<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1669221783.6803536, 'user': {'account_name': 'test2', 'status': 'online'}}), {}), return None 
+2022-11-23 19:43:03,686 DEBUG client Сообщение {'action': 'presence', 'time': 1669221783.6863499, 'user': {'account_name': 'test3', 'status': 'online'}} для пользователя test3 сформировано 
+2022-11-23 19:43:03,686 DEBUG client Сообщение {'action': 'presence', 'time': 1669221783.6863499, 'user': {'account_name': 'test3', 'status': 'online'}} для пользователя test3 сформировано 
+2022-11-23 19:43:03,689 DEBUG decor Function create_presence was called from main 
+2022-11-23 19:43:03,689 DEBUG decor Function create_presence was called from main 
+2022-11-23 19:43:03,689 DEBUG decor Function create_presence(('test3',), {}), return {'action': 'presence', 'time': 1669221783.6863499, 'user': {'account_name': 'test3', 'status': 'online'}} 
+2022-11-23 19:43:03,689 DEBUG decor Function create_presence(('test3',), {}), return {'action': 'presence', 'time': 1669221783.6863499, 'user': {'account_name': 'test3', 'status': 'online'}} 
+2022-11-23 19:43:03,690 DEBUG client Сообщение {'action': 'presence', 'time': 1669221783.6903582, 'user': {'account_name': 'test1', 'status': 'online'}} для пользователя test1 сформировано 
+2022-11-23 19:43:03,690 DEBUG decor Function send_message was called from main 
+2022-11-23 19:43:03,690 DEBUG client Сообщение {'action': 'presence', 'time': 1669221783.6903582, 'user': {'account_name': 'test1', 'status': 'online'}} для пользователя test1 сформировано 
+2022-11-23 19:43:03,690 DEBUG decor Function send_message was called from main 
+2022-11-23 19:43:03,691 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1669221783.6863499, 'user': {'account_name': 'test3', 'status': 'online'}}), {}), return None 
+2022-11-23 19:43:03,691 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1669221783.6863499, 'user': {'account_name': 'test3', 'status': 'online'}}), {}), return None 
+2022-11-23 19:43:03,691 DEBUG decor Function create_presence was called from main 
+2022-11-23 19:43:03,691 DEBUG decor Function create_presence was called from main 
+2022-11-23 19:43:03,692 DEBUG decor Function create_presence(('test1',), {}), return {'action': 'presence', 'time': 1669221783.6903582, 'user': {'account_name': 'test1', 'status': 'online'}} 
+2022-11-23 19:43:03,692 DEBUG decor Function create_presence(('test1',), {}), return {'action': 'presence', 'time': 1669221783.6903582, 'user': {'account_name': 'test1', 'status': 'online'}} 
+2022-11-23 19:43:03,693 DEBUG decor Function get_message was called from main 
+2022-11-23 19:43:03,693 DEBUG decor Function get_message was called from main 
+2022-11-23 19:43:03,694 DEBUG decor Function get_message((<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 200} 
+2022-11-23 19:43:03,694 DEBUG decor Function get_message((<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 200} 
+2022-11-23 19:43:03,694 INFO client Разбор сообщения от сервера: {'response': 200} 
+2022-11-23 19:43:03,694 DEBUG decor Function send_message was called from main 
+ера: {'response': 200} 
+2022-11-23 19:43:03,694 DEBUG decor Function send_message was called from main 
+2022-11-23 19:43:03,694 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1669221783.6903582, 'user': {'account_name': 'test1', 'status': 'online'}}), {}), return None 
+2022-11-23 19:43:03,694 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1669221783.6903582, 'user': {'account_name': 'test1', 'status': 'online'}}), {}), return None 
+2022-11-23 19:43:03,695 DEBUG decor Function process_ans was called from main 
+2022-11-23 19:43:03,695 DEBUG decor Function process_ans was called from main 
+2022-11-23 19:43:03,695 DEBUG decor Function process_ans(({'response': 200},), {}), return 200 : OK 
+2022-11-23 19:43:03,695 DEBUG decor Function process_ans(({'response': 200},), {}), return 200 : OK 
+2022-11-23 19:43:03,695 INFO client Установлено соединение с сервером. Ответ сервера: b'200 : OK' 
+2022-11-23 19:43:03,695 INFO client Установлено соединение с сервером. Ответ сервера: b'200 : OK' 
+2022-11-23 19:43:03,700 DEBUG client Запущены процессы 
+2022-11-23 19:43:03,700 DEBUG client Запущены процессы 
+2022-11-23 19:43:03,701 DEBUG decor Function get_message was called from main 
+2022-11-23 19:43:03,701 DEBUG decor Function get_message was called from main 
+2022-11-23 19:43:03,701 DEBUG decor Function get_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 200} 
+2022-11-23 19:43:03,701 DEBUG decor Function get_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 200} 
+2022-11-23 19:43:03,701 INFO client Разбор сообщения от сервера: {'response': 200} 
+2022-11-23 19:43:03,701 INFO client Разбор сообщения от сервера: {'response': 200} 
+2022-11-23 19:43:03,702 DEBUG decor Function process_ans was called from main 
+2022-11-23 19:43:03,702 DEBUG decor Function process_ans was called from main 
+2022-11-23 19:43:03,702 DEBUG decor Function process_ans(({'response': 200},), {}), return 200 : OK 
+2022-11-23 19:43:03,702 DEBUG decor Function process_ans(({'response': 200},), {}), return 200 : OK 
+2022-11-23 19:43:03,703 INFO client Установлено соединение с сервером. Ответ сервера: b'200 : OK' 
+2022-11-23 19:43:03,703 INFO client Установлено соединение с сервером. Ответ сервера: b'200 : OK' 
+2022-11-23 19:43:03,705 DEBUG client Запущены процессы 
+2022-11-23 19:43:03,705 DEBUG client Запущены процессы 
+2022-11-23 19:43:03,708 DEBUG decor Function get_message was called from main 
+2022-11-23 19:43:03,708 DEBUG decor Function get_message was called from main 
+2022-11-23 19:43:03,709 DEBUG decor Function get_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 200} 
+2022-11-23 19:43:03,709 DEBUG decor Function get_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>,), {}), return {'response': 200} 
+2022-11-23 19:43:03,709 INFO client Разбор сообщения от сервера: {'response': 200} 
+2022-11-23 19:43:03,709 INFO client Разбор сообщения от сервера: {'response': 200} 
+2022-11-23 19:43:03,710 DEBUG decor Function process_ans was called from main 
+2022-11-23 19:43:03,710 DEBUG decor Function process_ans was called from main 
+2022-11-23 19:43:03,711 DEBUG decor Function process_ans(({'response': 200},), {}), return 200 : OK 
+2022-11-23 19:43:03,711 DEBUG decor Function process_ans(({'response': 200},), {}), return 200 : OK 
+2022-11-23 19:43:03,711 INFO client Установлено соединение с сервером. Ответ сервера: b'200 : OK' 
+2022-11-23 19:43:03,711 INFO client Установлено соединение с сервером. Ответ сервера: b'200 : OK' 
+2022-11-23 19:43:03,714 DEBUG client Запущены процессы 
+2022-11-23 19:43:03,714 DEBUG client Запущены процессы 
+2022-11-23 19:43:53,065 DEBUG client Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': '333', 'time': 1669221833.065615, 'message_text': 'hi'} 
+2022-11-23 19:43:53,065 DEBUG client Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': '333', 'time': 1669221833.065615, 'message_text': 'hi'} 
+2022-11-23 19:43:53,067 DEBUG decor Function send_message was called from create_message 
+2022-11-23 19:43:53,067 DEBUG decor Function send_message was called from create_message 
+2022-11-23 19:43:53,067 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': '333', 'time': 1669221833.065615, 'message_text': 'hi'}), {}), return None 
+2022-11-23 19:43:53,067 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': '333', 'time': 1669221833.065615, 'message_text': 'hi'}), {}), return None 
+2022-11-23 19:43:53,067 INFO client Отправлено сообщение пользователю 333 
+2022-11-23 19:43:53,067 INFO client Отправлено сообщение пользователю 333 
+2022-11-23 19:43:53,068 DEBUG decor Function create_message was called from user_active 
+2022-11-23 19:43:53,068 DEBUG decor Function create_message was called from user_active 
+2022-11-23 19:43:53,068 DEBUG decor Function create_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, 'test1'), {}), return None 
+2022-11-23 19:43:53,068 DEBUG decor Function create_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, 'test1'), {}), return None 
+2022-11-23 19:44:28,071 DEBUG decor Function exit_msg was called from user_active 
+2022-11-23 19:44:28,071 DEBUG decor Function exit_msg was called from user_active 
+2022-11-23 19:44:28,071 DEBUG decor Function exit_msg(('test1',), {}), return {'action': 'exit', 'time': 1669221868.070451, 'account_name': 'test1', 'status': 'status'} 
+2022-11-23 19:44:28,071 DEBUG decor Function exit_msg(('test1',), {}), return {'action': 'exit', 'time': 1669221868.070451, 'account_name': 'test1', 'status': 'status'} 
+2022-11-23 19:44:28,072 DEBUG decor Function send_message was called from user_active 
+2022-11-23 19:44:28,072 DEBUG decor Function send_message was called from user_active 
+2022-11-23 19:44:28,072 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1669221868.070451, 'account_name': 'test1', 'status': 'status'}), {}), return None 
+2022-11-23 19:44:28,072 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1669221868.070451, 'account_name': 'test1', 'status': 'status'}), {}), return None 
+2022-11-23 19:44:28,073 INFO client Завершение работы клиента по команде пользователя. 
+2022-11-23 19:44:28,073 INFO client Завершение работы клиента по команде пользователя. 
+2022-11-23 19:44:28,417 CRITICAL client Потеряно соединение с сервером. 
+2022-11-23 19:44:28,417 CRITICAL client Потеряно соединение с сервером. 
+2022-11-23 19:44:28,420 DEBUG decor Function message_from_server was called from run 
+2022-11-23 19:44:28,420 DEBUG decor Function message_from_server was called from run 
+2022-11-23 19:44:28,420 DEBUG decor Function message_from_server((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, 'test1'), {}), return None 
+2022-11-23 19:44:28,420 DEBUG decor Function message_from_server((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51090), raddr=('127.0.0.1', 7777)>, 'test1'), {}), return None 
+2022-11-23 19:44:44,904 INFO client Завершение работы по команде пользователя. 
+2022-11-23 19:44:44,904 INFO client Завершение работы по команде пользователя. 
+2022-11-23 19:44:44,904 CRITICAL client Потеряно соединение с сервером. 
+2022-11-23 19:44:44,904 CRITICAL client Потеряно соединение с сервером. 
+2022-11-23 19:44:44,918 DEBUG decor Function message_from_server was called from run 
+2022-11-23 19:44:44,918 DEBUG decor Function message_from_server was called from run 
+2022-11-23 19:44:44,918 DEBUG decor Function message_from_server((<socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, 'test2'), {}), return None 
+2022-11-23 19:44:44,918 DEBUG decor Function message_from_server((<socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, 'test2'), {}), return None 
+2022-11-23 19:44:53,589 DEBUG client Сформирован словарь сообщения: {'action': 'message', 'from': 'test3', 'to': '111', 'time': 1669221893.5897648, 'message_text': 'HIHI'} 
+2022-11-23 19:44:53,589 DEBUG client Сформирован словарь сообщения: {'action': 'message', 'from': 'test3', 'to': '111', 'time': 1669221893.5897648, 'message_text': 'HIHI'} 
+2022-11-23 19:44:53,591 DEBUG decor Function send_message was called from create_message 
+2022-11-23 19:44:53,591 DEBUG decor Function send_message was called from create_message 
+2022-11-23 19:44:53,591 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test3', 'to': '111', 'time': 1669221893.5897648, 'message_text': 'HIHI'}), {}), return None 
+2022-11-23 19:44:53,591 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test3', 'to': '111', 'time': 1669221893.5897648, 'message_text': 'HIHI'}), {}), return None 
+2022-11-23 19:44:53,591 INFO client Отправлено сообщение пользователю 111 
+2022-11-23 19:44:53,591 INFO client Отправлено сообщение пользователю 111 
+2022-11-23 19:44:53,592 DEBUG decor Function create_message was called from user_active 
+2022-11-23 19:44:53,592 DEBUG decor Function create_message was called from user_active 
+2022-11-23 19:44:53,592 DEBUG decor Function create_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, 'test3'), {}), return None 
+2022-11-23 19:44:53,592 DEBUG decor Function create_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, 'test3'), {}), return None 
+2022-11-23 19:45:11,051 DEBUG client Сформирован словарь сообщения: {'action': 'message', 'from': 'test3', 'to': '222', 'time': 1669221911.051935, 'message_text': 'HY'} 
+2022-11-23 19:45:11,051 DEBUG client Сформирован словарь сообщения: {'action': 'message', 'from': 'test3', 'to': '222', 'time': 1669221911.051935, 'message_text': 'HY'} 
+2022-11-23 19:45:11,052 DEBUG decor Function send_message was called from create_message 
+2022-11-23 19:45:11,052 DEBUG decor Function send_message was called from create_message 
+2022-11-23 19:45:11,052 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test3', 'to': '222', 'time': 1669221911.051935, 'message_text': 'HY'}), {}), return None 
+2022-11-23 19:45:11,052 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test3', 'to': '222', 'time': 1669221911.051935, 'message_text': 'HY'}), {}), return None 
+2022-11-23 19:45:11,052 INFO client Отправлено сообщение пользователю 222 
+2022-11-23 19:45:11,052 INFO client Отправлено сообщение пользователю 222 
+2022-11-23 19:45:11,053 DEBUG decor Function create_message was called from user_active 
+2022-11-23 19:45:11,053 DEBUG decor Function create_message was called from user_active 
+2022-11-23 19:45:11,053 DEBUG decor Function create_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, 'test3'), {}), return None 
+2022-11-23 19:45:11,053 DEBUG decor Function create_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, 'test3'), {}), return None 
+2022-11-23 19:45:15,849 DEBUG decor Function exit_msg was called from user_active 
+2022-11-23 19:45:15,849 DEBUG decor Function exit_msg was called from user_active 
+2022-11-23 19:45:15,849 DEBUG decor Function exit_msg(('test3',), {}), return {'action': 'exit', 'time': 1669221915.8487391, 'account_name': 'test3', 'status': 'status'} 
+2022-11-23 19:45:15,849 DEBUG decor Function exit_msg(('test3',), {}), return {'action': 'exit', 'time': 1669221915.8487391, 'account_name': 'test3', 'status': 'status'} 
+2022-11-23 19:45:15,850 DEBUG decor Function send_message was called from user_active 
+2022-11-23 19:45:15,850 DEBUG decor Function send_message was called from user_active 
+2022-11-23 19:45:15,850 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1669221915.8487391, 'account_name': 'test3', 'status': 'status'}), {}), return None 
+2022-11-23 19:45:15,850 DEBUG decor Function send_message((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1669221915.8487391, 'account_name': 'test3', 'status': 'status'}), {}), return None 
+2022-11-23 19:45:15,851 INFO client Завершение работы клиента по команде пользователя. 
+2022-11-23 19:45:15,851 INFO client Завершение работы клиента по команде пользователя. 
+2022-11-23 19:45:16,855 DEBUG decor Function user_active was called from run 
+2022-11-23 19:45:16,855 DEBUG decor Function user_active was called from run 
+2022-11-23 19:45:16,856 DEBUG decor Function user_active((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, 'test3'), {}), return None 
+2022-11-23 19:45:16,856 DEBUG decor Function user_active((<socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51089), raddr=('127.0.0.1', 7777)>, 'test3'), {}), return None 
+2022-11-23 19:45:16,857 CRITICAL client Потеряно соединение с сервером. 
+2022-11-23 19:45:16,857 CRITICAL client Потеряно соединение с сервером. 
+2022-11-23 19:45:16,860 DEBUG decor Function message_from_server was called from run 
+2022-11-23 19:45:16,860 DEBUG decor Function message_from_server was called from run 

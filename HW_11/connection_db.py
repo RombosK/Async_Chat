@@ -9,7 +9,7 @@ try:
     sqlite_insert_query = """INSERT INTO users
                           (id, name, password)
                           VALUES
-                          (1, 'Admin', 'admin' );"""
+                          (2, 'user_1', 'user_1' );"""
     count = cursor.execute(sqlite_insert_query)
     sqlite_connection.commit()
     print("Запись успешно вставлена в таблицу users ", cursor.rowcount)
@@ -21,3 +21,7 @@ finally:
     if sqlite_connection:
         sqlite_connection.close()
         print("Соединение с SQLite закрыто")
+
+
+
+

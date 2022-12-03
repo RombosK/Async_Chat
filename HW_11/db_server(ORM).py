@@ -2,7 +2,6 @@ from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, 
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.sql import func
 
-
 Base = declarative_base()
 engine = create_engine('sqlite:///storage.db', echo=True)
 
@@ -52,13 +51,3 @@ class ContactList(Base):
 
 
 Base.metadata.create_all(engine)
-
-
-
-
-
-
-
-
-
-

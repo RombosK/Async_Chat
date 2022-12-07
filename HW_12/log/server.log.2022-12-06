@@ -1,0 +1,119 @@
+2022-12-05 23:22:03,709 DEBUG decor Function arg_parser was called from main 
+2022-12-05 23:22:03,713 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-05 23:22:03,713 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-05 23:25:00,567 DEBUG decor Function arg_parser was called from main 
+2022-12-05 23:25:00,567 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-05 23:25:00,568 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-05 23:41:48,722 DEBUG decor Function arg_parser was called from main 
+2022-12-05 23:41:48,723 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-05 23:41:48,723 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-05 23:46:22,486 DEBUG decor Function arg_parser was called from main 
+2022-12-05 23:46:22,487 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-05 23:46:22,488 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-05 23:46:36,242 DEBUG decor Function arg_parser was called from main 
+2022-12-05 23:46:36,242 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-05 23:46:36,243 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 00:25:13,525 DEBUG decor Function arg_parser was called from main 
+2022-12-06 00:25:13,526 DEBUG decor Function arg_parser((), {}), return (None, None) 
+2022-12-06 00:25:13,526 CRITICAL descriptor Тип данные не верен None введены тип данных <class 'NoneType'> 
+2022-12-06 00:25:19,875 DEBUG decor Function arg_parser was called from main 
+2022-12-06 00:25:19,875 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 00:25:19,876 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 00:28:26,738 DEBUG decor Function arg_parser was called from main 
+2022-12-06 00:28:26,739 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 00:28:26,740 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 00:28:36,463 DEBUG decor Function arg_parser was called from main 
+2022-12-06 00:28:36,463 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 00:28:36,463 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 00:31:06,902 DEBUG decor Function arg_parser was called from main 
+2022-12-06 00:31:06,903 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 00:31:06,903 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 00:39:47,765 DEBUG decor Function arg_parser was called from main 
+2022-12-06 00:39:47,766 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 00:39:47,766 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 00:43:06,708 DEBUG decor Function arg_parser was called from main 
+2022-12-06 00:43:06,709 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 00:43:06,709 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 00:43:37,511 DEBUG decor Function arg_parser was called from main 
+2022-12-06 00:43:37,511 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 00:43:37,512 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 12:06:49,572 DEBUG decor Function arg_parser was called from main 
+2022-12-06 12:06:49,573 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 12:06:49,573 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 12:09:59,279 DEBUG decor Function arg_parser was called from main 
+2022-12-06 12:09:59,279 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 12:09:59,279 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 12:12:18,500 DEBUG decor Function arg_parser was called from main 
+2022-12-06 12:12:18,500 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 12:12:18,500 CRITICAL descriptor Тип данные не верен  введены тип данных <class 'str'> 
+2022-12-06 12:26:55,899 DEBUG decor Function arg_parser was called from main 
+2022-12-06 12:26:55,899 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 12:26:55,933 INFO server Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2022-12-06 12:28:29,682 INFO server Установлено соедение с ПК ('127.0.0.1', 61379) 
+2022-12-06 12:28:30,197 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:28:30,198 DEBUG decor Function get_message((<socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61379)>,), {}), return {'action': 'presence', 'time': 1670318909.6821067, 'user': {'account_name': 'guest'}} 
+2022-12-06 12:28:30,198 DEBUG server Разбор сообщения от клиента : {'action': 'presence', 'time': 1670318909.6821067, 'user': {'account_name': 'guest'}} 
+2022-12-06 12:28:30,205 DEBUG decor Function send_message was called from process_client_message 
+2022-12-06 12:28:30,205 DEBUG decor Function send_message((<socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61379)>, {'response': 200}), {}), return None 
+2022-12-06 12:28:30,232 INFO server Клиент ('127.0.0.1', 61379) отключился от сервера. 
+2022-12-06 12:42:48,352 DEBUG decor Function arg_parser was called from main 
+2022-12-06 12:42:48,353 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 12:42:48,408 INFO server Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2022-12-06 12:45:29,548 INFO server Установлено соедение с ПК ('127.0.0.1', 62190) 
+2022-12-06 12:45:30,061 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:45:30,061 DEBUG decor Function get_message((<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62190)>,), {}), return {'action': 'presence', 'time': 1670319929.5484602, 'user': {'account_name': 'nick_1'}} 
+2022-12-06 12:45:30,062 DEBUG server Разбор сообщения от клиента : {'action': 'presence', 'time': 1670319929.5484602, 'user': {'account_name': 'nick_1'}} 
+2022-12-06 12:45:30,069 DEBUG decor Function send_message was called from process_client_message 
+2022-12-06 12:45:30,070 DEBUG decor Function send_message((<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62190)>, {'response': 200}), {}), return None 
+2022-12-06 12:45:45,730 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:45:45,730 DEBUG decor Function get_message((<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62190)>,), {}), return {'action': 'message', 'from': 'nick_1', 'to': 'nick_2', 'time': 1670319945.2570548, 'message_text': 'hi'} 
+2022-12-06 12:45:45,731 DEBUG server Разбор сообщения от клиента : {'action': 'message', 'from': 'nick_1', 'to': 'nick_2', 'time': 1670319945.2570548, 'message_text': 'hi'} 
+2022-12-06 12:45:45,731 ERROR server Пользователь nick_2 не зарегистрирован на сервере, отправка сообщения невозможна. 
+2022-12-06 12:45:55,369 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:45:55,369 DEBUG decor Function get_message((<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62190)>,), {}), return {'action': 'get_contacts', 'account_name': 'nick_1', 'time': 1670319955.2509124} 
+2022-12-06 12:45:55,369 DEBUG server Разбор сообщения от клиента : {'action': 'get_contacts', 'account_name': 'nick_1', 'time': 1670319955.2509124} 
+2022-12-06 12:45:55,383 DEBUG decor Function send_message was called from process_client_message 
+2022-12-06 12:45:55,383 DEBUG decor Function send_message((<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62190)>, {'response': 202, 'alert': ['nick_3']}), {}), return None 
+2022-12-06 12:46:19,672 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:46:19,672 DEBUG decor Function get_message((<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62190)>,), {}), return {'action': 'exit', 'time': 1670319979.5514848, 'account_name': 'nick_1'} 
+2022-12-06 12:46:19,672 DEBUG server Разбор сообщения от клиента : {'action': 'exit', 'time': 1670319979.5514848, 'account_name': 'nick_1'} 
+2022-12-06 12:47:00,967 INFO server Установлено соедение с ПК ('127.0.0.1', 62246) 
+2022-12-06 12:47:01,476 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:47:01,476 DEBUG decor Function get_message((<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62246)>,), {}), return {'action': 'presence', 'time': 1670320020.9672484, 'user': {'account_name': 'nick_4'}} 
+2022-12-06 12:47:01,476 DEBUG server Разбор сообщения от клиента : {'action': 'presence', 'time': 1670320020.9672484, 'user': {'account_name': 'nick_4'}} 
+2022-12-06 12:47:01,482 DEBUG decor Function send_message was called from process_client_message 
+2022-12-06 12:47:01,483 DEBUG decor Function send_message((<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62246)>, {'response': 200}), {}), return None 
+2022-12-06 12:47:14,145 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:47:14,145 DEBUG decor Function get_message((<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62246)>,), {}), return {'action': 'add_contact', 'time': 1670320026.2836196, 'account_name': 'nick_4', 'user_id': 'nick_5'} 
+2022-12-06 12:47:14,145 DEBUG server Разбор сообщения от клиента : {'action': 'add_contact', 'time': 1670320026.2836196, 'account_name': 'nick_4', 'user_id': 'nick_5'} 
+2022-12-06 12:47:14,157 DEBUG decor Function send_message was called from process_client_message 
+2022-12-06 12:47:14,157 DEBUG decor Function send_message((<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62246)>, {'response': 200}), {}), return None 
+2022-12-06 12:47:46,576 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:47:46,577 DEBUG decor Function get_message((<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62246)>,), {}), return {'action': 'message', 'from': 'nick_4', 'to': 'nick_2', 'time': 1670320066.1172304, 'message_text': 'ok'} 
+2022-12-06 12:47:46,577 DEBUG server Разбор сообщения от клиента : {'action': 'message', 'from': 'nick_4', 'to': 'nick_2', 'time': 1670320066.1172304, 'message_text': 'ok'} 
+2022-12-06 12:47:46,577 ERROR server Пользователь nick_2 не зарегистрирован на сервере, отправка сообщения невозможна. 
+2022-12-06 12:47:53,120 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:47:53,120 DEBUG decor Function get_message((<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62246)>,), {}), return {'action': 'get_contacts', 'account_name': 'nick_4', 'time': 1670320072.679906} 
+2022-12-06 12:47:53,121 DEBUG server Разбор сообщения от клиента : {'action': 'get_contacts', 'account_name': 'nick_4', 'time': 1670320072.679906} 
+2022-12-06 12:47:53,128 DEBUG decor Function send_message was called from process_client_message 
+2022-12-06 12:47:53,129 DEBUG decor Function send_message((<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62246)>, {'response': 202, 'alert': []}), {}), return None 
+2022-12-06 12:48:04,257 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:48:04,258 DEBUG decor Function get_message((<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62246)>,), {}), return {'action': 'exit', 'time': 1670320084.0105577, 'account_name': 'nick_4'} 
+2022-12-06 12:48:04,258 DEBUG server Разбор сообщения от клиента : {'action': 'exit', 'time': 1670320084.0105577, 'account_name': 'nick_4'} 
+2022-12-06 12:56:56,644 DEBUG decor Function arg_parser was called from main 
+2022-12-06 12:56:56,644 DEBUG decor Function arg_parser((), {}), return ('', 7777) 
+2022-12-06 12:56:56,654 INFO server Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 
+2022-12-06 12:57:10,484 INFO server Установлено соедение с ПК ('127.0.0.1', 62862) 
+2022-12-06 12:57:11,000 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:57:11,001 DEBUG decor Function get_message((<socket.socket fd=596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62862)>,), {}), return {'action': 'presence', 'time': 1670320630.4847534, 'user': {'account_name': 'nick_1'}} 
+2022-12-06 12:57:11,001 DEBUG server Разбор сообщения от клиента : {'action': 'presence', 'time': 1670320630.4847534, 'user': {'account_name': 'nick_1'}} 
+2022-12-06 12:57:11,003 DEBUG decor Function send_message was called from process_client_message 
+2022-12-06 12:57:11,003 DEBUG decor Function send_message((<socket.socket fd=596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62862)>, {'response': 200}), {}), return None 
+2022-12-06 12:57:17,107 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:57:17,107 DEBUG decor Function get_message((<socket.socket fd=596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62862)>,), {}), return {'action': 'get_contacts', 'account_name': 'nick_1', 'time': 1670320636.6601455} 
+2022-12-06 12:57:17,107 DEBUG server Разбор сообщения от клиента : {'action': 'get_contacts', 'account_name': 'nick_1', 'time': 1670320636.6601455} 
+2022-12-06 12:57:17,123 DEBUG decor Function send_message was called from process_client_message 
+2022-12-06 12:57:17,123 DEBUG decor Function send_message((<socket.socket fd=596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62862)>, {'response': 202, 'alert': ['nick_3']}), {}), return None 
+2022-12-06 12:58:49,424 DEBUG decor Function get_message was called from main_loop 
+2022-12-06 12:58:49,425 DEBUG decor Function get_message((<socket.socket fd=596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 62862)>,), {}), return {'action': 'exit', 'time': 1670320729.0542324, 'account_name': 'nick_1'} 
+2022-12-06 12:58:49,425 DEBUG server Разбор сообщения от клиента : {'action': 'exit', 'time': 1670320729.0542324, 'account_name': 'nick_1'} 

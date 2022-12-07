@@ -202,17 +202,17 @@ class ServerDataBase:
         return query.all()
 
 
-if __name__ == '__main__':
-    storage = ServerDataBase()
-    storage.add_user('nick_1', 'info_1')
-    storage.add_user('nick_2', 'info_2')
-    storage.add_user('nick_3', 'info_3')
-    print('test_1', list(storage.users_list()))
-    storage.add_contact('nick_1', 'nick_2')
-    storage.add_contact('nick_1', 'nick_3')
-    print('test_2', storage.get_contacts('nick_1'))
-    storage.del_contact('nick_1', 'nick_2')
-    print('test_3', storage.get_contacts('nick_1'))
-    print('finally_test', list(storage.users_list()))
+# if __name__ == '__main__':
+#     storage = ServerDataBase()
+#     storage.add_user('nick_1', 'info_1')
+#     storage.add_user('nick_2', 'info_2')
+#     storage.add_user('nick_3', 'info_3')
+#     print('test_1', list(storage.users_list()))
+#     storage.add_contact('nick_1', 'nick_2')
+#     storage.add_contact('nick_1', 'nick_3')
+#     print('test_2', storage.get_contacts('nick_1'))
+#     storage.del_contact('nick_1', 'nick_2')
+#     print('test_3', storage.get_contacts('nick_1'))
+    # print('finally_test', list(storage.users_list()))
 
 

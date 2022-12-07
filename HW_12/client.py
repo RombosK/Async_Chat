@@ -122,8 +122,8 @@ class ClientReader(threading.Thread, metaclass=ClientVerifier):
         while True:
             try:
                 message = get_message(self.sock)
-                if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and JET in message \
-                        and MESSAGE_TEXT in message and message[JET] == self.account_name:
+                if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message \
+                        and MESSAGE_TEXT in message and message[DESTINATION] == self.account_name:
                     print(f'\nПолучено сообщение от пользователя {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
                     logger.info(f'Получено сообщение от пользователя {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
                 elif RESPONSE in message and message[RESPONSE] == 202:

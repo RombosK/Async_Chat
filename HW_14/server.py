@@ -4,7 +4,7 @@ import argparse
 import logging
 import configparser
 import log.server_log_config
-from HW_14.config import DEFAULT_PORT
+from config import *
 from utils import *
 from decor import log
 from server.core import MessageProcessor
@@ -13,8 +13,8 @@ from server.main_window import MainWindow
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import Qt
 
-
-logger = logging.getLogger('server')
+# Инициализация логирования сервера.
+logger = logging.getLogger('server_dist')
 
 
 @log
@@ -37,7 +37,9 @@ def arg_parser(default_port, default_address):
 def config_load():
     config = configparser.ConfigParser()
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    config.read(f"{dir_path}/{'server.ini'}")
+    config.read(f"{dir_path}/{'server_dist+++.ini'}")
+    # Если конфиг файл загружен правильно, запускаемся, иначе конфиг по
+    # умолчанию.
     if 'SETTINGS' in config:
         return config
     else:
@@ -51,35 +53,50 @@ def config_load():
 
 @log
 def main():
+    # Загрузка файла конфигурации сервера
     config = config_load()
+
+    # Загрузка параметров командной строки, если нет параметров, то задаём
+    # значения по умоланию.
     listen_address, listen_port, gui_flag = arg_parser(
         config['SETTINGS']['Default_port'], config['SETTINGS']['Listen_Address'])
 
+    # Инициализация базы данных
     database = ServerStorage(
         os.path.join(
             config['SETTINGS']['Database_path'],
             config['SETTINGS']['Database_file']))
 
+    # Создание экземпляра класса - сервера и его запуск:
     server = MessageProcessor(listen_address, listen_port, database)
     server.daemon = True
     server.start()
 
+    # Если  указан параметр без GUI то запускаем простенький обработчик
+    # консольного ввода
     if gui_flag:
         while True:
             command = input('Введите exit для завершения работы сервера.')
             if command == 'exit':
+                # Если выход, то завершаем основной цикл сервера.
                 server.running = False
                 server.join()
                 break
+
+    # Если не указан запуск без GUI, то запускаем GUI:
     else:
+        # Создаём графическое окружение для сервера:
         server_app = QApplication(sys.argv)
         server_app.setAttribute(Qt.AA_DisableWindowContextHelpButton)
         main_window = MainWindow(database, server, config)
+
+        # Запускаем GUI
         server_app.exec_()
+
+        # По закрытию окон останавливаем обработчик сообщений
         server.running = False
 
 
 if __name__ == '__main__':
     main()
-
 

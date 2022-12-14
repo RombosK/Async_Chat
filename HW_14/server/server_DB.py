@@ -250,10 +250,10 @@ class ServerStorage:
 
 if __name__ == '__main__':
     test_db = ServerStorage('../server_base.db3')
-    test_db.user_login('user_1', '127.0.0.1', 8088, None)
-    test_db.user_login('user_2', '127.0.0.10', 8080, None)
+    test_db.user_login('test_1', '127.0.0.1', 8088)
+    test_db.user_login('test_2', '127.0.0.10', 8080)
     print(test_db.users_list())
-    test_db.process_message('user_1', 'user_2')
+    test_db.process_message('test_1', 'test_2')
     print(test_db.message_history())
 
 

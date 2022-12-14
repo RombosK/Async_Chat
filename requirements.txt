@@ -141,10 +141,10 @@ Werkzeug==2.1.2
 wikipedia==1.4.0
 wrapt==1.14.1
 zipp==3.11.0
-
 pip~=22.1.2
 attrs~=21.4.0
 greenlet~=1.1.2
 setuptools~=56.0.0
 SQLAlchemy~=1.4.44
 PyQt6~=6.4.0
+crypto~=1.4.1

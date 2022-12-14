@@ -18,6 +18,8 @@ STATUS = 'status'
 SENDER = 'from'
 DESTINATION = 'to'
 EXIT = 'exit'
+DATA = 'bin'
+PUBLIC_KEY = 'pubkey'
 
 PRESENCE = 'presence'
 RESPONSE = 'response'
@@ -33,6 +35,7 @@ DEL_CONTACT = 'del_contact'
 LIST_INFO = 'data_list'
 REMOVE_CONTACT = 'remove'
 USERS_REQUEST = 'get_users'
+PUBLIC_KEY_REQUEST = 'pubkey_need'
 
 RESPONSE_OK = {RESPONSE: 200}
 RESPONSE_BAD = {
@@ -53,7 +56,15 @@ CONTACTS = {
     USER_ID: None
 }
 
+RESPONSE_205 = {
+    RESPONSE: 205
+}
 
+
+RESPONSE_511 = {
+    RESPONSE: 511,
+    DATA: None
+}
 
 
 

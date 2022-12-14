@@ -1,16 +1,13 @@
-import sys
-import json
 import logging
-from main_window_conv import Ui_MainClientWindow
-from PyQt6.QtWidgets import QMainWindow, QApplication, QMessageBox, QListView
+import sys
+
+from PyQt6.QtCore import pyqtSlot, Qt
 from PyQt6.QtGui import QStandardItemModel, QStandardItem, QBrush, QColor
-from PyQt6.QtCore import pyqtSlot, QEvent, Qt
-from add_contact import AddContactDialog
-from del_contact import DelContactDialog
-from database import ClientDataBase
-from transport import ClientTransport
-from start_dialog import UserNameDialog
-from HW_13.log.errors import ServerError
+from PyQt6.QtWidgets import QMainWindow, QApplication, QMessageBox
+from HW_14.log.errors import ServerError
+from HW_14.client.add_contact import AddContactDialog
+from HW_14.client.del_contact import DelContactDialog
+from HW_14.client.main_window_conv import Ui_MainClientWindow
 
 sys.path.append('../')
 

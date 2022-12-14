@@ -1,13 +1,13 @@
+import json
+import logging
 import socket
 import sys
-import time
-import logging
-import json
 import threading
+import time
+from HW_14.config import *
+from HW_14.log.errors import ServerError
+from HW_14.utils import *
 from PyQt6.QtCore import pyqtSignal, QObject
-from HW_13.utils import *
-from HW_13.config import *
-from HW_13.log.errors import ServerError
 
 sys.path.append('../')
 
@@ -64,7 +64,7 @@ class ClientTransport(threading.Thread, QObject):
         try:
             with socket_lock:
                 send_message(self.transport, self.create_presence())
-                self.process_server_ans(get_message(self.transport))
+                self.process_ans(get_message(self.transport))
         except (OSError, json.JSONDecodeError):
             logger.critical('Потеряно соединение с сервером!')
             raise ServerError('Потеряно соединение с сервером!')

@@ -3,9 +3,8 @@ import sys
 import unittest
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from HW_13.tools.config import TIME, ACTION, PRESENCE, USER, ACCOUNT_NAME, RESPONSE, STATUS, ERROR, DEFAULT_PORT, \
-    DEFAULT_IP_ADDRESS
-from HW_13.client import create_presence, process_ans, arg_parser
+from HW_13.tools.config import TIME, ACTION, PRESENCE, USER, ACCOUNT_NAME, RESPONSE, STATUS, ERROR
+from HW_13.client import create_presence, process_ans
 
 
 class TestClient(unittest.TestCase):

@@ -1,8 +1,9 @@
 import sys
-from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QApplication, QLabel, QTableView, QDialog, QPushButton, \
-    QLineEdit, QFileDialog, QMessageBox
-from PyQt5.QtGui import QStandardItemModel, QStandardItem
+
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QStandardItemModel, QStandardItem
+from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QApplication, QLabel, QTableView, QDialog, QPushButton, \
+    QLineEdit, QFileDialog
 
 
 def gui_create_model(database):

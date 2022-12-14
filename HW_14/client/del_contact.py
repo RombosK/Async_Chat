@@ -1,8 +1,8 @@
-import sys
 import logging
-from PyQt6.QtWidgets import QDialog, QLabel, QComboBox, QPushButton, QApplication
-from PyQt6.QtCore import Qt
+import sys
 
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import QDialog, QLabel, QComboBox, QPushButton, QApplication
 
 sys.path.append('../')
 logger = logging.getLogger('client')

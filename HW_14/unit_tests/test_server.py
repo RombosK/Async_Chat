@@ -1,9 +1,11 @@
 import os
 import sys
 import unittest
+
+from HW_13.server import process_client_message
 from HW_13.tools.config import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, \
     PRESENCE, TIME, USER, ERROR
-from HW_13.server import process_client_message
+
 sys.path.append(os.path.join(os.getcwd(), '..'))
 
 

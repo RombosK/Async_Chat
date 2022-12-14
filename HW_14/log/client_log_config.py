@@ -1,6 +1,6 @@
 import logging
-from logging.handlers import TimedRotatingFileHandler
 import os.path
+from logging.handlers import TimedRotatingFileHandler
 
 path = os.path.join(os.path.abspath(__file__), '..', "client.log")
 

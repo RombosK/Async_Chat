@@ -1,7 +1,7 @@
+import json
 import os
 import sys
 import unittest
-import json
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
 from HW_13.tools.config import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE, ENCODING, STATUS

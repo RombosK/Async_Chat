@@ -1,18 +1,18 @@
 from PyQt5.QtWidgets import QMainWindow, qApp, QMessageBox, QApplication, QListView
 from PyQt5.QtGui import QStandardItemModel, QStandardItem, QBrush, QColor
 from PyQt5.QtCore import pyqtSlot, QEvent, Qt
-from Cryptodome.Cipher import PKCS1_OAEP
+import Cryptodome.Cipher
 from Cryptodome.PublicKey import RSA
 import Cryptodome.PublicKey
 import json
 import logging
 import base64
 
-from HW_15.client.main_window_conv import Ui_MainClientWindow
-from HW_15.client.add_contact import AddContactDialog
-from HW_15.client.del_contact import DelContactDialog
-from HW_15.common.errors import ServerError
-from HW_15.common.variables import *
+from HW_16.client_pack.client.client.main_window_conv import Ui_MainClientWindow
+from HW_16.client_pack.client.client.add_contact import AddContactDialog
+from HW_16.client_pack.client.client.del_contact import DelContactDialog
+from HW_16.client_pack.client.common.errors import ServerError
+from HW_16.client_pack.client.common.variables import *
 
 logger = logging.getLogger('client')
 

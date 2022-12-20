@@ -6,11 +6,11 @@ import json
 import hmac
 import binascii
 import os
-from HW_15.common.metaclasses import ServerMaker
-from HW_15.common.descryptors import Port
-from HW_15.common.variables import *
-from HW_15.common.utils import send_message, get_message
-from HW_15.common.decos import login_required
+from HW_16.server_pack.server.common.metaclasses import ServerMaker
+from HW_16.server_pack.server.common.descryptors import Port
+from HW_16.server_pack.server.common.variables import *
+from HW_16.server_pack.server.common.utils import send_message, get_message
+from HW_16.server_pack.server.common.decos import login_required
 
 # Загрузка логера
 logger = logging.getLogger('server')

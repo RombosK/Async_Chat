@@ -1,14 +1,14 @@
 import socket
 import logging
-import HW_15.logs.config_client_log
-import HW_15.logs.config_server_log
+import HW_16.client_pack.client.logs.config_client_log
+import HW_16.client_pack.client.logs.config_server_log
 import sys
 
 sys.path.append('../')
 
 # метод определения модуля, источника запуска.
 if sys.argv[0].find('client') == -1:
-    # если не клиент то сервер!
+    # если не клиент, то сервер!
     logger = logging.getLogger('server')
 else:
     # иначе сервер

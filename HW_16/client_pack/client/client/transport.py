@@ -8,9 +8,9 @@ import hmac
 import binascii
 from PyQt5.QtCore import pyqtSignal, QObject
 
-from HW_15.common.utils import *
-from HW_15.common.variables import *
-from HW_15.common.errors import ServerError
+from HW_16.client_pack.client.common.utils import *
+from HW_16.client_pack.client.common.variables import *
+from HW_16.client_pack.client.common.errors import ServerError
 
 # Логер и объект блокировки для работы с сокетом.
 logger = logging.getLogger('client')

@@ -2,8 +2,8 @@ import json
 import sys
 
 sys.path.append('../')
-from HW_15.common.variables import *
-from HW_15.common.decos import log
+from variables import *
+from decos import log
 
 
 @log

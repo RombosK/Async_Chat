@@ -1,9 +1,9 @@
 import datetime
-from HW_16.common.variables import *
+from HW_16.client_pack.client.common.variables import *
 from sqlalchemy import create_engine, Table, Column, Integer, String, Text, MetaData, DateTime
 from sqlalchemy.orm import mapper, sessionmaker
 import os
-
+from sqlalchemy.sql import default_comparator
 
 class ClientDatabase:
     '''
